@@ -24,7 +24,45 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+            <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=419166831510010";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+        <header class='site_header'>
+          <h1>Welcome to Libby's Instagram Party Feed!</h1>
+          <a href='/'></a>
+        </header>
+        <div class='more_info'>
+          <a class='view_more_info' href='#' id='header_view_more_info'></a>
+          <div class='more_info_content'>
+            <div class='about_kozik_cocoon'>
+              <img class='more_info_headline' src='images/More_info_headline.png' />
+              <p>Libby is having a party and this is where all of the tagged instagram photos will appear</p>
+              <p>To add you photos, please add #theTag to the instagram images</p>
+            </div>
+          </div>
+        </div>
+        <!-- The Imstafeed area -->
+        <div class='main' role='main'>
+          <p>Images Tagged with: #mwiththeat</p>
+          <div id='instafeed'></div>
+        </div>
+
+        <!-- The footer -->
+        <footer class='site_footer'>
+          <img src="images/Footer_Follow_Kozik-01.png" />
+          <div class='sharing'>
+            <div class='twitter'>
+              <a href="https://twitter.com/cloistermaximus" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @cloistermaximus</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <div class='facebook'><div class="fb-like" data-href="http://www.kozikcocoon.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"></div></div>
+          </div>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -39,6 +77,5 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-55897701-1');ga('send','pageview');
         </script>
-        <div id="instafeed"></div>
     </body>
 </html>
