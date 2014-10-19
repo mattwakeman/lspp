@@ -9,6 +9,6 @@ var feed = new Instafeed({
     //var images = $("#instafeed").find('a');
     //});
   //},
-  template: '<div><a href="{{link}}" target="_blank"><img src="{{image}} alt="{{caption}}"/></a><h2>{{caption}}</h2>&hearts; {{likes}}</div>'
+ template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"/><div class="likes">&hearts; {{likes}}</div></a>'
 });
 feed.run();
