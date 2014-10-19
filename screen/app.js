@@ -1,11 +1,11 @@
 var feed = new Instafeed({
   clientId: '467ede5a6b9b48ae8e03f4e2582aeeb3',
-  limit: 20,
+  limit: 200,
   sortBy: 'most-liked',
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
-      var delay = (index * 75) + 'ms';
+      var delay = (index * 200) + 'ms';
       $(image).css('-webkit-animation-delay', delay);
       $(image).css('-moz-animation-delay', delay);
       $(image).css('-ms-animation-delay', delay);
