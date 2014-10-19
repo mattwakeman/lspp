@@ -17,6 +17,8 @@ var feed = new Instafeed({
       $(image).addClass('animated flipInX');
     });
   },
-  template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"/><div class="likes">&hearts; {{likes}}</div></a>'
+  //template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"/><div class="likes">&hearts; {{likes}}</div></a>'
+
+  template: '<li><div><a href="{{link}}"><img src="{{image}}" /></a><h3>{{caption}}</h3></div></li>'
 });
 feed.run();
