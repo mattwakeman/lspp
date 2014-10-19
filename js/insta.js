@@ -1,4 +1,6 @@
 var feed = new Instafeed({
+  get: 'tagged',
+  tagName: 'mwiththeat',
   clientId: '467ede5a6b9b48ae8e03f4e2582aeeb3',
   limit: 20,
   sortBy: 'most-liked',
