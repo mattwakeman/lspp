@@ -29,7 +29,7 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=419166831510010";
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=???";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
         <header class='site_header'>
@@ -54,13 +54,18 @@
 
         <!-- The footer -->
         <footer class='site_footer'>
-          <img src="images/Footer_Follow_Kozik-01.png" />
+          <img src="images/Footer_Follow_Kozik-01.png" alt="Some Image"/>
           <div class='sharing'>
-            <div class='twitter'>
-              <a href="https://twitter.com/cloistermaximus" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @cloistermaximus</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <div class='facebook'>
+              <div
+                class="fb-like"
+                data-href="http://www.kozikcocoon.com/"
+                data-send="true"
+                data-layout="button_count"
+                data-width="450"
+                data-show-faces="true">
+              </div>
             </div>
-            <div class='facebook'><div class="fb-like" data-href="http://www.kozikcocoon.com/" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"></div></div>
           </div>
         </footer>
 
