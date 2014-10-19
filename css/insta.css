@@ -722,14 +722,7 @@ textarea
 		max-width: 59em;
 	}
 }
-.site_header a
-{
-	background-image: url("/images/never_forget/Header_Mobile.png");
-}
 @media (min-width:59em)
 {
-	.site_header a
-	{
-		background-image: url("/images/never_forget/Header.png");
-	}
+
 }
