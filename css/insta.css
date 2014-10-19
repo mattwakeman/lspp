@@ -468,8 +468,7 @@ textarea
 }
 .site_header a
 {
-	height: 250px;
-	max-height: 250px;
+
 }
 @media (min-width:59em)
 {
