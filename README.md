@@ -1,4 +1,4 @@
 lspp
 ====
 
-website for party to pull images from Instagram
+website to pull hashtagged images from Instagram
