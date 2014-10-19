@@ -14,7 +14,7 @@ var feed = new Instafeed({
       $(image).css('-ms-animation-delay', delay);
       $(image).css('-o-animation-delay', delay);
       $(image).css('animation-delay', delay);
-      $(image).addClass('animated flipInX');
+      //$(image).addClass('animated flipInX');
     });
   },
   //template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"/><div class="likes">&hearts; {{likes}}</div></a>'
