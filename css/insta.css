@@ -474,16 +474,12 @@ textarea
 {
 	.site_header
 	{
-		background-image: url("/images/Header-Gradient.png");
-		height: 500px;
+
 	}
 	.site_header a
 	{
-		background-image: url("/images/Header-01.png");
 		background-position: center center;
 		display: block;
-		height: 500px;
-		max-height: 500px;
 	}
 }
 .more_info
