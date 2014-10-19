@@ -33,7 +33,7 @@ body {
   z-index: 22;
   cursor: pointer;
 }
-
+/*
 #toggle {
   display: none;
 }
@@ -42,7 +42,7 @@ body {
   transform: rotate(0deg);
   opacity: 0;
 }
-
+*/
 .peacock {
   background-color: #9A1C0C;
   width: 100px;
