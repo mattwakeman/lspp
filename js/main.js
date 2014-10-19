@@ -145,7 +145,7 @@
         e = new Instafeed({
             get: "tagged",
             tagName: "mwiththeat",
-            clientId: "a09f68c9ae8c4c5bba18c283b8df669f",
+            clientId: "d9d640b98ef8483096aed5a8e3142bdb",
             resolution: "standard_resolution",
             template: '      <div id="{{id}}" class="instagram_container">        <div id="{{id}}">          <a href="{{link}}" target="_blank" title="{{caption}} by @{{model.user.username}}" >            <img src="{{image}}" alt="{{caption}} by @{{model.user.username}}" class="instagram_image" />          </a>        </div>        <div class="instagram_image_meta">          <div class="likes instagram_image_meta_item">            <p>              <a class="icon-heart" href="{{link}}" target="_blank" title="{{caption}}" >                {{likes}}               </a>            </p>          </div>          <div class="comments instagram_image_meta_item">            <p>              <a class="icon-bubble" href="{{link}}" target="_blank" title="{{caption}}" >                {{comments}}               </a>            </p>          </div>          <div class="owner instagram_image_meta_item">            <p>              <a href="http://instagram.com/{{model.user.username}}" target="_blank" title="{{model.user.full_name}}" >                <img src="{{model.user.profile_picture}}" class="owner_profile_picture" />                {{model.user.full_name}}              </a>            </p>          </div>          <div class="caption instagram_image_meta_item">            <p>              {{caption}}            </p>          </div>        </div>      </div>    '
         }), e.run()
