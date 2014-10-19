@@ -1,0 +1,265 @@
+div, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: -moz-radial-gradient(center, ellipse cover, #fff65e 0%, #febf04 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #fff65e 0%, #febf04 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #fff65e 0%, #febf04 100%);
+  background: radial-gradient(center, ellipse cover, #fff65e 0%, #febf04 100%);
+}
+
+.wrapper {
+  margin: 100px auto;
+  width: 532px;
+  height: 310px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.wrapper label {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 510px;
+  position: relative;
+  z-index: 22;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+#toggle:checked ~ .peacock .feather {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  opacity: 0;
+}
+
+.peacock {
+  background-color: #9A1C0C;
+  width: 100px;
+  height: 120px;
+  border-top-right-radius: 38% 58%;
+  border-top-left-radius: 80% 80%;
+  border-bottom-right-radius: 60% 79%;
+  border-bottom-left-radius: 67% 60%;
+  position: relative;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -50px;
+}
+.peacock:after, .peacock:before {
+  content: '';
+  position: absolute;
+}
+.peacock:before {
+  width: 32px;
+  height: 39px;
+  top: -25px;
+  left: 11px;
+  background: -moz-radial-gradient(top left, transparent 32px, #9A1C0C 32px);
+  background: -webkit-radial-gradient(top left, transparent 32px, #9A1C0C 32px);
+  -webkit-transform: skewY(-45deg) rotate(8deg);
+  background: -ms-radial-gradient(top left, transparent 32px, #9A1C0C 32px);
+  -webkit-transform: skewY(-45deg) rotate(8deg);
+  background: radial-gradient(top left, rgba(0, 0, 0, 0) 32px, #9a1c0c 32px);
+  transform: skewY(-45deg) rotate(8deg);
+}
+.peacock:after {
+  bottom: 81%;
+  left: 36px;
+  width: 10px;
+  height: 0;
+  border: none;
+  border-bottom: solid #9A1C0C 117px;
+  border-left: solid transparent 15px;
+  border-right: solid transparent 35px;
+  transform: scaleY(1.01);
+}
+
+.eyes {
+  position: absolute;
+  top: -90px;
+  left: 22px;
+  z-index: 2;
+}
+.eyes .eye {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #003469;
+  position: relative;
+  display: inline-block;
+}
+.eyes .eye:after {
+  content: "";
+  width: 40%;
+  height: 40%;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+.eyes .left:after {
+  left: 35%;
+  top: 38%;
+}
+.eyes .right {
+  top: -3px;
+  left: -5px;
+}
+.eyes .right:after {
+  left: 19%;
+  top: 40%;
+}
+
+.mouth {
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+  position: absolute;
+  top: -68px;
+  left: 25px;
+  z-index: 20;
+}
+
+.beak {
+  width: 0;
+  heiht: 0;
+  border-top: solid #FF9900 55px;
+  border-left: solid transparent 9px;
+  border-right: none;
+  border-bottom: none;
+  position: relative;
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+  /* beak shadow */
+}
+.beak:before, .beak:after {
+  content: "";
+  width: 0;
+  heiht: 0;
+  position: absolute;
+  border-right: solid rgba(255, 255, 255, 0) 8px;
+  border-left: none;
+  border-bottom: none;
+}
+.beak:after {
+  border-top: solid #ffd904 55px;
+  bottom: 0;
+  left: -0.3px;
+}
+.beak:before {
+  border-top: solid rgba(0, 0, 0, 0.2) 55px;
+  bottom: -3px;
+  left: 4px;
+}
+
+.tail {
+  position: absolute;
+  top: -190px;
+  left: 50%;
+  z-index: -1;
+  margin-left: -40px;
+}
+.tail .feather {
+  width: 84px;
+  height: 100.8px;
+  background: -moz-radial-gradient(center center, circle, #FF9900 7px, #fff004 7px, #fff004 14px, #000 14px, #000 16px, transparent 16px), linear-gradient(90deg, #0D8195 50%, #2E6172 50%);
+  background: -webkit-radial-gradient(center center, circle, #FF9900 7px, #fff004 7px, #fff004 14px, #000 14px, #000 16px, transparent 16px), linear-gradient(90deg, #0D8195 50%, #2E6172 50%);
+  background: -ms-radial-gradient(center center, circle, #FF9900 7px, #fff004 7px, #fff004 14px, #000 14px, #000 16px, transparent 16px), linear-gradient(90deg, #0D8195 50%, #2E6172 50%);
+  border-radius: 50% / 50%;
+  position: absolute;
+  -webkit-transform-origin: center 264.6px;
+  transform-origin: center 264.6px;
+  -webkit-transition: -webkit-transform .4s ease, opacity .05s ease .36s;
+  transition: transform .4s ease, opacity .05s ease .36s;
+}
+.tail .feather:after, .tail .feather:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 66.36px;
+  border-top: solid transparent .1px;
+  border-bottom: solid transparent 222.6px;
+  -moz-transform: rotate(0.01deg);
+  z-index: -1;
+}
+.tail .feather:after {
+  border-right: solid #0D8195 39.06px;
+  left: 4%;
+}
+.tail .feather:before {
+  border-left: solid #2E6172 42px;
+  left: 48%;
+}
+.tail .feather:nth-child(1) {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
+.tail .feather:nth-child(2) {
+  -webkit-transform: rotate(-67.5deg);
+  transform: rotate(-67.5deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
+.tail .feather:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
+.tail .feather:nth-child(4) {
+  -webkit-transform: rotate(-22.5deg);
+  transform: rotate(-22.5deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
+.tail .feather:nth-child(5) {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
+.tail .feather:nth-child(6) {
+  -webkit-transform: rotate(22.5deg);
+  transform: rotate(22.5deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
+.tail .feather:nth-child(7) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
+.tail .feather:nth-child(8) {
+  -webkit-transform: rotate(67.5deg);
+  transform: rotate(67.5deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
+.tail .feather:nth-child(9) {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.tail .feather:nth-child(5) {
+  z-index: 1;
+}
