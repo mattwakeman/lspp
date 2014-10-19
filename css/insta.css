@@ -460,7 +460,6 @@ textarea
 .site_header
 {
 	background-color: #311f39;
-	background-image: url("/images/Header-Gradient-Mobile.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 250px;
@@ -473,7 +472,6 @@ textarea
 }
 .site_header a
 {
-	background-image: url("/images/Header_Mobile.png");
 	background-position: center 15px;
 	background-repeat: no-repeat;
 	display: block;
